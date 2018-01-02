@@ -23,12 +23,14 @@ Gem::Specification.new do |s|
 
   s.require_paths = ['lib']
 
- 
+
+
+  s.add_runtime_dependency 'paperclip'
   s.add_runtime_dependency 'spreadsheet', '~> 1.1'
   s.add_runtime_dependency 'rubyzip', '~> 1.2'
   s.add_runtime_dependency 'thread_safe', '~> 0.3', '>= 0.3'
   s.add_runtime_dependency 'erubis', '~> 2.7.0'
-  s.add_runtime_dependency 'thor', '~> 0.20.0'
+  s.add_runtime_dependency 'thor'
 
   # for the dummy rails sandbox used in testing
   s.add_development_dependency 'rubocop', '~> 0.38'
